@@ -41,6 +41,7 @@ header .navbar .container .wrapper-navbar .logo {
   color: var(--green);
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 header .navbar .container .wrapper-navbar .menu {
   display: flex;
@@ -66,6 +67,7 @@ header .navbar .container .wrapper-navbar .btn-switch {
   margin-right: 30px;
   cursor: pointer;
   color: var(--white);
+  -webkit-tap-highlight-color: transparent;
 }
 /* darkmode */
 .btn-switch .dark-mode.active {
