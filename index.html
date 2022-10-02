@@ -14,11 +14,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Welcome...</title>
   </head>
   <body>
     <!-- Navbar -->
-    <header>
+    <header class="animate__animated animate__fadeInDown">
       <div class="navbar">
         <div class="container">
           <div class="wrapper-navbar">
@@ -33,10 +37,10 @@
                 <a href="#about">About Me</a>
               </li>
               <li>
-                <a href="#">Skill</a>
+                <a href="#skil">Skill</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
             <div class="btn-switch">
@@ -57,7 +61,7 @@
 
     <!-- intro -->
     <section>
-      <div class="sosmed">
+      <div class="sosmed animate__animated animate__fadeInLeft">
         <hr />
         <a href="https://www.linkedin.com/in/muhamad-fajri-181830228/" target="_blank">
           <i class="fa-brands fa-linkedin"></i>
@@ -75,9 +79,9 @@
       </div>
       <div class="intro">
         <div class="container">
-          <h3>Hi, my name is</h3>
-          <h1>Muhamad Fajri.</h1>
-          <p>
+          <h3 class="animate__animated animate__fadeInUp">Hi, my name is</h3>
+          <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Muhamad Fajri.</h1>
+          <p class="animate__animated animate__fadeInUp animate__delay-1s">
             <a href="https://www.google.com/search?q=universitas+gunadarma&oq=universitas+gunada&aqs=chrome.0.0i355i433i512j46i433i512j69i57j46i175i199i512j0i512j69i60l3.3909j0j1&sourceid=chrome&ie=UTF-8" target="_blank"
               >Student at Gunadarma University</a
             >
@@ -85,11 +89,11 @@
           </p>
           <hr />
           <br />
-          <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae architecto unde facere odit sit doloribus laborum explicabo harum voluptatum illum!</p>
+          <p class="lorem animate__animated animate__fadeIn animate__delay-1s">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae architecto unde facere odit sit doloribus laborum explicabo harum voluptatum illum!</p>
         </div>
       </div>
 
-      <div class="email">
+      <div class="email animate__animated animate__fadeIn">
         <p>muhamadfajri9090@gmail.com</p>
       </div>
     </section>
@@ -98,44 +102,88 @@
     <!-- About -->
     <section id="about">
       <div class="container-about">
-        <h2>About</h2>
+        <h2 data-aos="fade-down">About</h2>
         <div class="about">
-          <p>
+          <p data-aos="fade-right">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestiae adipisci sint, placeat numquam voluptate vel ut deleniti dicta est quae earum debitis sapiente amet minima maiores eaque, quia tenetur laudantium pariatur?
             Velit necessitatibus corrupti, pariatur veniam minus porro expedita animi facilis at incidunt autem exercitationem doloribus consequatur, ab libero. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero assumenda
             aperiam amet accusantium nulla sit rerum, animi nisi ex commodi!
           </p>
-          <img src="assets/icon/rimuru.jpg" alt="" />
+          <img src="assets/icon/rimuru.jpg" alt="" data-aos="flip-left" data-aos-delay="500" />
         </div>
       </div>
     </section>
     <!-- About End -->
 
     <!-- Skill -->
-    <section>
+    <section id="skil">
       <div class="skill">
-        <h2>My Skill</h2>
-        <div class="logo-skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+        <h2 data-aos="fade-down">My Skill</h2>
+        <div class="logo-skill" >
+          <img data-aos="zoom-in" data-aos-delay="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
 
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+          <img data-aos="zoom-in" data-aos-delay="200" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
 
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          <img data-aos="zoom-in" data-aos-delay="300" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 
-          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+          <img data-aos="zoom-in" data-aos-delay="400" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
 
-          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
-          
+          <img data-aos="zoom-in" data-aos-delay="500" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+
+          <img data-aos="zoom-in" data-aos-delay="600" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+
+          <img data-aos="zoom-in" data-aos-delay="700" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
         </div>
       </div>
     </section>
     <!-- Skill End -->
+
+    <!-- contact -->
+    <div class="container-contact" id="contact">
+      <h2>Contact Me</h2>
+      <form action="action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="idn">Indonesia</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <!-- contact end -->
+
+    <!-- Footer -->
+    <div class="footer-sosmed">
+      <a href="https://www.linkedin.com/in/muhamad-fajri-181830228/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/mhmdfjri28/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-square-twitter"></i>
+      </a>
+      <a href="https://github.com/mhmdfjri" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <p class="footer-words">Designed & Built by Muhamad Fajri</p>
+    <!-- Footer End -->
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
