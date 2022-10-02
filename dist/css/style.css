@@ -29,6 +29,7 @@ header {
   right: 0;
   left: 0;
   box-sizing: border-box;
+  z-index: 5;
 }
 header .navbar .container .wrapper-navbar {
   display: flex;
@@ -129,6 +130,7 @@ section {
   bottom: 180px;
   left: 40px;
   right: auto;
+  z-index: -1;
 }
 .sosmed a {
   color: var(--white);
@@ -151,6 +153,7 @@ section {
   color: var(--white);
   letter-spacing: 0.1em;
   bottom: 140px;
+  z-index: -1;
 }
 .intro {
   display: flex;
@@ -166,10 +169,12 @@ section {
 }
 .intro .container p {
   color: var(--white);
+  --animate-delay: 0.5s;
 }
 .intro .container h1 {
   color: var(--green);
   font-size: 70px;
+  --animate-delay: 0.2s;
 }
 .intro .container a {
   text-decoration: none;
@@ -180,6 +185,7 @@ section {
 }
 .lorem {
   width: 50%;
+  --animate-delay: 0.9s;
 }
 
 /* about */
@@ -216,17 +222,84 @@ section .skill .logo-skill {
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
-  justify-content: center;
 }
 section .skill h2 {
   color: var(--green);
   padding: 20px;
   text-align: center;
+  margin-bottom: 15px;
 }
 section .skill img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
+}
+/* contact */
+input[type='text'],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type='submit'] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container-contact {
+  width: 50%;
+  margin: auto;
+  background-color: transparent;
+  padding: 20px;
+  color: var(--green);
+  margin-top: 30px;
+}
+.container-contact h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer-sosmed{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  gap: 40px;
+  visibility: hidden;
+  margin-top: 50px;
+}
+.footer-sosmed a{
+  font-size: 25px;
+  color: var(--white);
+}
+.footer-sosmed i:hover{
+  color: var(--green);
+}
+.footer-words{
+  padding: 15px 0 20px 0;
+  width: 80%;
+  margin: auto;
+  color: var(--white);
+  text-align: center;
 }
 /* Media query */
 @media screen and (max-width: 990px) {
@@ -265,6 +338,10 @@ section .skill img {
   }
   .lorem {
     width: 70%;
+  }
+  section .skill .logo-skill {
+    gap: 55px;
+    justify-content: space-around;
   }
 }
 @media screen and (max-width: 478px) {
@@ -314,6 +391,15 @@ section .skill img {
   section .skill {
     width: 100%;
   }
+  section .skill .logo-skill {
+    gap: 40px;
+  }
+  .container-contact{
+    width: 80%;
+  }
+  .footer-sosmed{
+    visibility: visible;
+  }
 }
 @media screen and (max-width: 375px) {
   .intro .container h1 {
@@ -325,4 +411,7 @@ section .skill img {
   header .navbar .container .wrapper-navbar .menu {
     padding: 100px 50px 400px 85px;
   }
+  /* section .skill .logo-skill{
+    gap: 50px;
+  } */
 }
