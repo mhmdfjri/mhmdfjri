@@ -130,7 +130,6 @@ section {
   bottom: 180px;
   left: 40px;
   right: auto;
-  z-index: -1;
 }
 .sosmed a {
   color: var(--white);
